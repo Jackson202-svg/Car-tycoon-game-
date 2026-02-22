@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { background: #000; color: #0f0; font-family: monospace; }
+        .admin-box { border: 1px solid #0f0; padding: 20px; margin: 20px; }
+    </style>
+    <title>Palmy Admin Panel</title>
+</head>
+<body>
+    <h1>SYSTEM OVERRIDE</h1>
+    <div class="admin-box">
+        <h3>Currency Tools</h3>
+        <button onclick="addMoney(100000)">Add $100k</button>
+        <button onclick="resetData()" style="color: red;">WIPE DATA</button>
+    </div>
+    
+    <div class="admin-box">
+        <h3>Firebase Status</h3>
+        <p id="db-status">Checking connection...</p>
+    </div>
+
+    <script>
+        function addMoney(amount) {
+            let cash = parseInt(localStorage.getItem('balance')) || 0;
+            localStorage.setItem('balance', cash + amount);
+            alert('Cash Injected!');
+        }
+    </script>
+</body>
+</html>
