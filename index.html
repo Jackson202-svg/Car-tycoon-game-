@@ -7,28 +7,27 @@
     <title>Palmy Car Tycoon</title>
 </head>
 <body>
-    <div id="loading-overlay"></div>
-    
+    <div id="loading-screen">
+        <h1>PALMY TYCOON</h1>
+        <p>Loading Assets...</p>
+    </div>
+
     <header>
-        <h1>Palmy Car Tycoon</h1>
-        <div class="stats">
-            <p>Cash: $<span id="balance">0</span></p>
-            <p>Cars Owned: <span id="car-count">0</span></p>
+        <div class="stats-bar">
+            <span>Cash: $<strong id="cash-display">0</strong></span>
+            <span>Income: $<strong id="income-display">0</strong>/s</span>
         </div>
     </header>
 
-    <main>
-        <div class="navigation">
-            <a href="carpart.html" class="btn">Buy Parts</a>
-            <a href="sell.html" class="btn">Sell Cars</a>
-            <a href="bot/bot.html" class="btn">Hire AI Bots</a>
-        </div>
+    <nav>
+        <a href="carpart.html" class="nav-btn">Buy Cars/Parts</a>
+        <a href="sell.html" class="nav-btn">Sell Inventory</a>
+        <a href="bot/bot.html" class="nav-btn">AI Bots</a>
+    </nav>
 
-        <section id="garage">
-            <h2>Your Garage</h2>
-            <div id="car-list">
-                </div>
-        </section>
+    <main id="garage-view">
+        <h2>Your Garage</h2>
+        <div id="inventory-grid"></div>
     </main>
 
     <script src="src/data.js"></script>
