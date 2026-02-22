@@ -1,5 +1,5 @@
 # 🏎️ Palmy Car Tycoon
-**Live Demo:** [Click Here to Play](https://yourusername.github.io/your-repo-name/)
+**Live Demo:** [Click Here to Play](https://jackson202-svg.github.io/Car-tycoon-game-/)
 
 ---
 Welcome to the official repository for **Palmy Car Tycoon**. This is a web-based tycoon game built with HTML, CSS, and JavaScript, designed to scale with a Firebase backend.
