@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Palmy Car Tycoon</title>
+</head>
+<body>
+    <div id="loading-overlay"></div>
+    
+    <header>
+        <h1>Palmy Car Tycoon</h1>
+        <div class="stats">
+            <p>Cash: $<span id="balance">0</span></p>
+            <p>Cars Owned: <span id="car-count">0</span></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="navigation">
+            <a href="carpart.html" class="btn">Buy Parts</a>
+            <a href="sell.html" class="btn">Sell Cars</a>
+            <a href="bot/bot.html" class="btn">Hire AI Bots</a>
+        </div>
+
+        <section id="garage">
+            <h2>Your Garage</h2>
+            <div id="car-list">
+                </div>
+        </section>
+    </main>
+
+    <script src="src/data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
